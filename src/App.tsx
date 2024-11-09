@@ -3,9 +3,12 @@ import Header from './compounds/Header/Header';
 import MainPage from "./page/MainPage/MainPage";
 
 const useStyles = createUseStyles({
-  container: {
-    marginLeft: "auto",
-    marginRight: "auto",
+  viewport: {
+    backgroundColor: "#565967",
+    height: "100vh",
+    paddingLeft: "15%",
+    paddingRight: "15%",
+    padding: "20px"
   },
 });
 
@@ -13,9 +16,9 @@ function App() {
   const classes = useStyles()
 
   return (
-    <div>
+    <div className={classes.viewport}>
       <Header />
-      <main className={classes.container}>
+      <main>
         <MainPage />
       </main>
     </div>
